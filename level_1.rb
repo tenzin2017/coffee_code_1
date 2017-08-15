@@ -4,10 +4,16 @@ movie_array = [
   ['Martin Scorsese', 'The Wolf of Wall Street']
 ]
 
-def movie_hash(movie_array)
 
-  movie_hash = Hash[movie_array.map { |key,value| [key, value] } ]
+def movie_hash(movie_array)
+  movie_array.map do |v|
+    do
+      movie_array[0][0] => v[0][1]
 
 end
 
-puts movie_hash(movie_array)
+# def movie_hash(movie_array)
+#   Hash[movie_array.map { |key,value| [key, value] } ]
+# end
+#
+# puts movie_hash(movie_array)
