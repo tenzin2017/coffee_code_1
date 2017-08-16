@@ -6,14 +6,11 @@ movie_array = [
 
 
 def movie_hash(movie_array)
-  movie_array.map do |v|
-    do
-      movie_array[0][0] => v[0][1]
-
+  hash = {}
+   movie_array.map do |array|
+     hash[array[0]] = array[1]
+end
+   return hash
 end
 
-# def movie_hash(movie_array)
-#   Hash[movie_array.map { |key,value| [key, value] } ]
-# end
-#
-# puts movie_hash(movie_array)
+puts movie_hash(movie_array).inspect
